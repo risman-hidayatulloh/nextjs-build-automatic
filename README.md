@@ -36,13 +36,17 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 ## Build Automatic
+```bash
+#fixing
 yarn add --dev @types/react @types/react-dom
 yarn add next-font-google
 yarn add @types/next-font-google --save-dev
 
+#NextJS + ESLint Prettier Lint-Staged Husky
 yarn add --dev @typescript-eslint/eslint-plugin
 yarn add --dev prettier eslint-config-prettier
 yarn add --dev husky
 yarn husky install
 yarn husky add .husky/pre-commit "npm test"
 yarn add --dev lint-staged
+```
